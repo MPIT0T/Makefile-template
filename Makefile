@@ -1,25 +1,4 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: mpitot <mpitot@student.42lyon.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/02/22 15:09:12 by mpitot            #+#    #+#              #
-#    Updated: 2024/03/04 09:39:56 by mpitot           ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
-SRCS	=	main.c				\
-			utils.c				\
-			init.c				\
-			print_info.c		\
-			time.c				\
-			routine_odd.c		\
-			routine_pair.c		\
-			routine_utils.c		\
-			fork_operations.c	\
-			free.c
+SRCS	=	main.c ...
 
 OBJS	=	$(SRCS:%.c=${OBJ_D}%.o)
 
@@ -29,7 +8,7 @@ OBJ_D	=	.objs/
 
 HEAD	=	includes/
 
-NAME	=	philo
+NAME	=	...
 
 CC		=	cc
 
