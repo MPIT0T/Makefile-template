@@ -93,14 +93,14 @@ fclean	:
 	@rm -f ${NAME}
 	@echo "$(WHITE)[$(RED)$(NAME)$(WHITE)] $(RED)deleted.$(DEFAULT)"
 
-separate	:
-	@echo "$(WHITE)------------------------------------------------------------$(DEFAULT)"
+re		:	fclean .internal_separate all
 
-re		:	fclean separate all
-
-.PHONY	:	all clean fclean re libft separate
+.PHONY	:	all clean fclean re libft
 
 .NOTPARALLEL all:
 	@if [ $(CHANGED) -eq 0 ]; then \
 		echo "$(YELLOW)Nothing to be done for $(WHITE)[$(CYAN)$(NAME)$(WHITE)].$(DEFAULT)"; \
 	fi
+
+.internal_separate	:
+	@echo "$(WHITE)------------------------------------------------------------$(DEFAULT)"
